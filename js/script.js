@@ -1,29 +1,29 @@
-function SP(side){
+function SquP(side){
     return side*4;
 }
 function squarePerimeterCalculate(){
     const numberside=document.getElementById("squareInput");
     const result= parseInt(numberside.value);
 
-    const perimeter = SP(result);
-    document.getElementById("SP").innerText= "It's perimeter is " + perimeter + " cm";
+    const perimeter = SquP(result);
+    document.getElementById("SquP").innerText= "It's perimeter is " + perimeter + " cm";
 }
 
 
-function SA(side){
+function SquA(side){
     return side*side;
 }
 function squareAreaCalculate(){
     const numberside=document.getElementById("squareInput");
     const result=parseInt(numberside.value);
     
-    const area =SA(result);
-    document.getElementById("SA").innerText="The Area of the Square is "+area+" cm^2";
+    const area =SquA(result);
+    document.getElementById("SquA").innerText="The Area of the Square is "+area+" cm^2";
 }
 
 
   
-  function CP(radio){
+  function CiP(radio){
     return Math.PI*2*radio;
 }
 
@@ -31,23 +31,23 @@ function circlePerimeterCalculate(){
     const numberside=document.getElementById("circleInput");
     const result= parseInt(numberside.value);
 
-    const perimeter = CP(result);
-    document.getElementById("CP").innerText= "It's perimeter is " + perimeter + " cm";
+    const perimeter = CiP(result);
+    document.getElementById("CiP").innerText= "It's perimeter is " + perimeter + " cm";
 }
 
 
-function CA(radio){
+function CiA(radio){
     return Math.PI*Math.pow(radio,2);
 }
 function circleAreaCalculate(){
     const numberside=document.getElementById("circleInput");
     const result=parseInt(numberside.value);
     
-    const area =CA(result);
-    document.getElementById("CA").innerText="The Area of the circle is "+area+" cm^2";
+    const area =CiA(result);
+    document.getElementById("CiA").innerText="The Area of the circle is "+area+" cm^2";
 }
 
-function TP (side1, side2, base) {
+function TrP (side1, side2, base) {
     return side1 + side2 + base;
 }
 
@@ -56,20 +56,20 @@ function trianglePerimeterCalculate() {
     const side2 = parseInt(document.getElementById("triangleInput2").value);
     const base = parseInt(document.getElementById("triangleInputB").value);
 
-    const perimeter = TP(side1,side2,base);
+    const perimeter = TrP(side1,side2,base);
 
-    document.getElementById("TP").innerText = "Its perimeter is: " + perimeter + " cm.";
+    document.getElementById("TrP").innerText = "Its perimeter is: " + perimeter + " cm.";
 }
-function TA (base, h) {
+function TrA (base, h) {
     return (base * h) / 2;
 }
 function triangleAreaCalculate() {
     const base = parseInt(document.getElementById("triangleInputB").value);
     const h = parseInt(document.getElementById("triangleInputH").value);
 
-    const area = TA(base, h);
+    const area = TrA(base, h);
 
-    document.getElementById("TA").innerText = "Its area is "+area+" cm^2";
+    document.getElementById("TrA").innerText = "Its area is "+area+" cm^2";
 }
 
 
@@ -94,8 +94,8 @@ function cleanCircle(){
 }
 
 function cleanTriangle(){
-    const cleanParagrahp1 = document.getElementById("TA");
-    const cleanParagrahp2 = document.getElementById("TP");
+    const cleanParagrahp1 = document.getElementById("TrA");
+    const cleanParagrahp2 = document.getElementById("TrP");
     const TRII = document.getElementById("triangleInput1");
     const TRI2 = document.getElementById("triangleInput2");
     const TRIB = document.getElementById("triangleInputB");

@@ -1,4 +1,4 @@
-.h1 {
+h1 {
     text-align: center;
     font-size: 50px;
     font-family:'Source Sans Pro', sans-serif;
@@ -6,7 +6,7 @@
     grid-column: 2;
 
 }
-.h2 {
+h2 {
     text-align: center;
     padding:auto;
     font-size: 20px;
@@ -29,7 +29,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
-.contenedorAzul{
+.cuadro{
     background-color: #373238;
     color: white;
     width: 422px;
@@ -87,5 +87,5 @@ label{
     align-items: center;
     border-radius: .6rem;
     cursor: pointer;
-    font-size: 77%;
+    font-size: 77%;
 }
